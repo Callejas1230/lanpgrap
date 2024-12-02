@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADRON DE PERROS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg">
+        <div class="container">
+            <a class="navbar-brand mx-auto" href="#">PELICULA BOLIVIANA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#trailer">Tráiler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">BOLETOS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero d-flex align-items-center justify-content-center text-center text-white">
+        <div class="container">
+            <img src="img/logo1.jpg" alt="LADRON DE PERROS" class="img-fluid rounded-circle mb-4 animate__animated animate__fadeInDown" style="width: 250px; height: 250px;">
+            <h1 class="display-3 animate__animated animate__fadeIn animate__delay-1s">¡DE LAS MEJORES PELICULAS!</h1>
+            <p class="lead animate__animated animate__fadeIn animate__delay-2s">Una pelicula 100% Boliviana echa para todo publico con la intencion de demostrar el talento que existe en el pais</p>
+            <a href="#contacto" class="btn btn-warning btn-lg mt-4 animate__animated animate__zoomIn animate__delay-3s">compra tu boleto</a>
+        </div>
+    </section>
+
+    <section id="menu" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold text-primary">ECHA UN VISTAZO DE ALGUNAS ESENAS</h2>
+            <p class="mb-5 text-muted">DISFRUTA DE LA PELICULA , GRACIAS</p>
+            <div id="menuCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner shadow-lg rounded">
+                    <div class="carousel-item active">
+                        <img src="img/imagen1.0.jpg" class="d-block w-100 transition-img" alt="Pollo Asado">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5></h5>
+                            <p> </p>
+                            <a href="#" class="btn btn-warning">Compra tu boleto</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/imagen2.0.jpg" class="d-block w-100 transition-img" alt="Combo Familiar">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5></h5>
+                            <p></p>
+                            <a href="#" class="btn btn-warning">Compra tu boleto</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/imagen3.jpg" class="d-block w-100 transition-img" alt="Acompañamientos">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5></h5>
+                            <p></p>
+                            <a href="#" class="btn btn-warning">Compra tu boleto</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#menuCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="trailer" class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2 class="mb-4 fw-bold">Tráiler</h2>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/tu_trailer" title="YouTube video" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold">Contáctanos para conseguir tu boleto</h2>
+            <p class="mb-4">¡Síguenos en nuestras redes sociales o completa el formulario para más información!</p>
+            <form action="#" method="post">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <input type="text" class="form-control mb-3" placeholder="Tu Nombre" required>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="email" class="form-control mb-3" placeholder="Tu Correo Electrónico" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="4" placeholder="Tu Comentario" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning btn-lg">Enviar</button>
+            </form>
+            <div class="d-flex justify-content-center mt-4">
+                <a href="https://www.facebook.com" class="btn btn-outline-light m-2"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="https://www.instagram.com" class="btn btn-outline-light m-2"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.twitter.com" class="btn btn-outline-light m-2"><i class="fab fa-twitter"></i> Twitter</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-dark text-white text-center py-3">
+        <p>&copy; 2024 CINE BOLIVIANO</p>
+        <p>Dirección:Cines, La Paz, Bolivia</p>
+        <div class="d-flex justify-content-center">
+            <a href="https://wa.me/123456789" class="btn btn-success btn-lg m-2">
+                <i class="fab fa-whatsapp"></i> ¡Adquiere tu boleto!
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
